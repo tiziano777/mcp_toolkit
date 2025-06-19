@@ -1,0 +1,14 @@
+name: Docker MCP Postgres 
+version: 1.0.0
+schema: v1
+
+mcpServers:
+  - name: Docker MCP Postgres
+    command: docker
+    args:
+      - run
+      - -i
+      - --rm
+      - mcp/postgres
+      # replace with your actual connection string postgresql://user:password@host:port/db-name
+      - postgresql://postgres:postgres@localhost:5432/log_db 

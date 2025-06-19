@@ -1,0 +1,3 @@
+volumes/qdrant
+volumes/redis
+volumes/postgres

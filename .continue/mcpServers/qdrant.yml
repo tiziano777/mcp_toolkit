@@ -1,0 +1,12 @@
+name: qdrant-mcp
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: Qdrant Vector Store MCP
+    command: npx
+    args:
+      - -y
+      - mcp-qdrant
+    env:
+      QDRANT_URL: http://localhost:6333
+      COLLECTION_NAME: code_chunks

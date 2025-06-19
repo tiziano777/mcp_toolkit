@@ -1,0 +1,10 @@
+name: redis-mcp
+version: 0.0.1
+schema: v1
+mcpServers:
+  - name: Redis Memory MCP
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-redis"
+      - "redis://localhost:6379"

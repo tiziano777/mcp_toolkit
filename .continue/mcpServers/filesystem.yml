@@ -1,0 +1,13 @@
+name: Filesystem MCP
+version: 1.0.0
+schema: v1
+
+mcpServers:
+  - name: Filesystem # Puoi usare questo nome quando parli con Continue
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-filesystem"
+      - "/home/tiziano/progetti/mcp_toolkit/workspace" # <-- Questo è il tuo path di workspace
+      # Puoi aggiungere altre directory consentite qui, se necessario
+      # Esempio: - "/path/to/another/allowed/directory"
