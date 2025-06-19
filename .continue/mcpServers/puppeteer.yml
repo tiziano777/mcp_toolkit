@@ -1,14 +1,12 @@
-name: Pupetteer MCP Docker
+name: Pupetteer MCP 
 version: 1.0.4
 schema: v1
+
 mcpServers:
-  - name: Pupetteer MCP Docker
-    command: docker
-    args:
-      - run
-      - -i
-      - --rm
-      - --init
-      - -e
-      - DOCKER_CONTAINER=true
-      - mcp/puppeteer
+  - name: Pupetteer
+    command: "npx"
+    args: 
+      - "-y"
+      - "@modelcontextprotocol/server-puppeteer"
+    
+  

@@ -8,6 +8,7 @@ mcpServers:
     args:
       - "-y"
       - "@modelcontextprotocol/server-filesystem"
-      - "/home/tiziano/progetti/mcp_toolkit/workspace" # <-- Questo è il tuo path di workspace
+      - "C:\\Users\\tifinizzi\\Desktop\\mcp_toolkit\\workspace" # <-- Questo è il tuo path di workspace per windows
+      #- "/home/tiziano/progetti/mcp_toolkit/workspace" # <-- Questo è il tuo path di workspace per linux
       # Puoi aggiungere altre directory consentite qui, se necessario
       # Esempio: - "/path/to/another/allowed/directory"
