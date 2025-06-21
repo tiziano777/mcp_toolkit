@@ -1,12 +1,13 @@
-name: qdrant-mcp
-version: 0.0.1
+name: qdrant-mcp 
+version: 1.0.0
 schema: v1
 mcpServers:
-  - name: Qdrant Vector Store MCP
-    command: npx
-    args:
-      - -y
-      - mcp-qdrant
-    env:
+  - name: qdrant
+    command: uvx
+    args: 
+      - mcp-server-qdrant
+    env: 
+      #QDRANT_LOCAL_PATH: http://localhost:6333
       QDRANT_URL: http://localhost:6333
-      COLLECTION_NAME: code_chunks
+      COLLECTION_NAME: "redis-collection"
+      EMBEDDING_MODEL: "sentence-transformers/all-MiniLM-L6-v2"

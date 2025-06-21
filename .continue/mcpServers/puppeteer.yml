@@ -1,5 +1,5 @@
-name: Pupetteer MCP 
-version: 1.0.4
+name: pupetteer-mcp 
+version: 1.0.0
 schema: v1
 
 mcpServers:

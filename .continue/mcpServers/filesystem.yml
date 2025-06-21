@@ -1,4 +1,4 @@
-name: Filesystem MCP
+name: filesystem-mcp
 version: 1.0.0
 schema: v1
 
@@ -8,7 +8,7 @@ mcpServers:
     args:
       - "-y"
       - "@modelcontextprotocol/server-filesystem"
-      - "C:\\Users\\tifinizzi\\Desktop\\mcp_toolkit\\workspace" # <-- Questo è il tuo path di workspace per windows
-      #- "/home/tiziano/progetti/mcp_toolkit/workspace" # <-- Questo è il tuo path di workspace per linux
+      #- "C:\\Users\\tifinizzi\\Desktop\\mcp_toolkit\\workspace" # <-- Questo è il tuo path di workspace per windows
+      - "/home/tiziano/progetti/mcp_toolkit/workspace" # <-- Questo è il tuo path di workspace per linux
       # Puoi aggiungere altre directory consentite qui, se necessario
       # Esempio: - "/path/to/another/allowed/directory"

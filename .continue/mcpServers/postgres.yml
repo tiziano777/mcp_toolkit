@@ -1,11 +1,13 @@
-name:  Postgres MCP
+name:  postgres-mcp
 version: 1.0.0
 schema: v1
+
 mcpServers:
-    name: Postgres
-    command: "npx"
-    args: 
-      - "-y"
-      - "@modelcontextprotocol/server-postgres"
-      # replace with your actual connection string postgresql://user:password@host:port/db-name
-      - "postgresql://postgres:postgres@localhost:5432/DB_NAME" # <-- This is your connection string
+  name: Postgres
+  command: docker
+  args: 
+    - "run"
+    - "-i"
+    - "--rm"
+    - "mcp/postgres"
+    - "postgresql://postgres:postgres@localhost:5432/DB_NAME"

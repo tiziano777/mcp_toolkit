@@ -1,15 +1,12 @@
-name: Docker MCP Git
+name: git-mcp
 version: 0.0.1
 schema: v1
 
-mcpServers:
-  - name: Git # Questo è il nome che userai per interagire con Continue
-    command: docker
-    args:
-      - run
-      - --rm
-      - -i
-      - --mount
-      #- type=bind,src=/home/tiziano/progetti/mcp_toolkit,dst=/git_repo # <-- PERCORSO FISSO qui
-      - type=bind,src="C:\\Users\\tifinizzi\\Desktop\\mcp_toolkit",dst=\\git_repo # <-- PERCORSO FISSO qui per Windows
-      - mcp/git
+mcpServers: 
+  - name: Git
+    command: uvx
+    args: 
+      - mcp-server-git
+      - --repository
+      - "/home/tiziano/progetti/mcp_toolkit"
+  
